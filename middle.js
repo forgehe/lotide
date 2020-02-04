@@ -1,4 +1,4 @@
-// Implement a function eqArrays which takes in two arrays and returns true or false, based on a perfect match. 
+// Implement a function eqArrays which takes in two arrays and returns true or false, based on a perfect match.
 const eqArrays = function(array1, array2) {
   if (array1.length !== array2.length) {
     return false;
@@ -9,14 +9,14 @@ const eqArrays = function(array1, array2) {
     }
   }
   return true;
-}
+};
 
 const assertArraysEqual = function(array1, array2) {
-  console.log(`The arrays: [${array1}] and [${array2}] are ${eqArrays(array1, array2) ? "" : "not "}equal.`)
+  console.log(`The arrays: [${array1}] and [${array2}] are ${eqArrays(array1, array2) ? "" : "not "}equal.`);
   // console.log(array2);
   // console.log(array1);
   // console.log(eqArrays(array1, array2));
-}
+};
 
 const middle = function(array) {
   let output = [];
@@ -27,7 +27,7 @@ const middle = function(array) {
     output.push(array[Math.floor(array.length / 2)]);
   }
   return output;
-}
+};
 
 
 assertArraysEqual(middle([1, 2, 3, 4, 5, 6, 7, 8]), [4,5]);
