@@ -18,7 +18,7 @@ const findKeyByValue = function(object, string) {
     }
   }
   
-}
+};
 
 const matchValue = function(object, value, string) {
   console.log(`${string} comparing ${object[value]}`);
@@ -27,10 +27,10 @@ const matchValue = function(object, value, string) {
     return value;
   }
 
-}
+};
 
 
-const bestTVShowsByGenre = { 
+const bestTVShowsByGenre = {
   sci_fi: "The Expanse",
   comedy: "Brooklyn Nine-Nine",
   sitcom: "That '70s Show",
