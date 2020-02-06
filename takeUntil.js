@@ -1,5 +1,5 @@
 // Implement a function eqArrays which takes in two arrays and returns true or false, based on a perfect match.
-const eqArrays = function (array1, array2) {
+const eqArrays = function(array1, array2) {
   if (array1.length !== array2.length) {
     return false;
   }
@@ -11,18 +11,17 @@ const eqArrays = function (array1, array2) {
   return true;
 };
 
-const assertArraysEqual = function (array1, array2) {
+const assertArraysEqual = function(array1, array2) {
   console.log(`The arrays: [${array1}] and [${array2}] are ${eqArrays(array1, array2) ? "" : "not "}equal.`);
 };
 
-// The function will return a "slice of the array with elements taken from the beginning." 
-// It should keep going until the callback/predicate returns a truthy value. 
+// The function will return a "slice of the array with elements taken from the beginning."
+// It should keep going until the callback/predicate returns a truthy value.
 
 
 
 
-const takeUntil = function (array, callback) {
-  // ...
+const takeUntil = function(array, callback) {
   let output = [];
   for (const iterator of array) {
     // console.log("TCL: takeUntil -> iterator", iterator)
@@ -35,7 +34,7 @@ const takeUntil = function (array, callback) {
     }
   }
   return output;
-}
+};
 
 
 
