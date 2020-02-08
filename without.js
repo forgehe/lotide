@@ -41,7 +41,7 @@ const without = function(source, toRemove) {
 assertArraysEqual(without([1, 2, 3], [1]), [2, 3]);
 assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]);
 assertArraysEqual(without(["1", "2", "3"], ["1", "2", "3"]), []);
-assertArraysEqual(without(["91", "eight2", "3"], ["1", "2", "3"]), ["91", "eight2"]);
+assertArraysEqual(without(["91", "eight2", "2"], ["1", "2", "3"]), ["91", "eight2"]);
 
 const words = ["hello", "world", "lighthouse"];
 without(["hello", "world", "lighthouse"], ["lighthouse"]); // no need to capture return value for this test case
