@@ -1,28 +1,8 @@
-/* 
-Our map function will take in two arguments:
+// const eqArrays = require("./eqArrays");
 
-    An array to map
-    A callback function
+// const assertArraysEqual = require("./assertEqual");
 
-The map function will return a new array based on the results of the callback function.
-*/
-const eqArrays = function(array1, array2) {
-  if (array1.length !== array2.length) {
-    return false;
-  }
-  for (let i = 0; i < array1.length; i++) {
-    if (array1[i] !== array2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
-
-const assertArraysEqual = function(array1, array2) {
-  console.log(`The arrays: [${array1}] and [${array2}] are ${eqArrays(array1, array2) ? "" : "not "}equal.`);
-};
-
-const words = ["ground", "control", "to", "major", "tom"];
+// const words = ["ground", "control", "to", "major", "tom"];
 
 const map = (array, callback) => {
   const results = [];
@@ -32,13 +12,14 @@ const map = (array, callback) => {
   return results;
 }
 
- 
-const results1 = map(words, word => word[0]);
-console.log(results1);
+ module.exports = map;
 
-assertArraysEqual(results1, [ 'g', 'c', 't', 'm', 't' ]);
-assertArraysEqual(test1 = map(words, word => { return "1";}), ['1', '1', '1', '1', '1']);
-assertArraysEqual(test1 = map(words, word => {
-  word += word[1];
-  return word;
-}), ['groundr', 'controlo', 'too', 'majora', 'tomo']); // => true
+// const results1 = map(words, word => word[0]);
+// console.log(results1);
+
+// assertArraysEqual(results1, [ 'g', 'c', 't', 'm', 't' ]);
+// assertArraysEqual(test1 = map(words, word => { return "1";}), ['1', '1', '1', '1', '1']);
+// assertArraysEqual(test1 = map(words, word => {
+//   word += word[1];
+//   return word;
+// }), ['groundr', 'controlo', 'too', 'majora', 'tomo']); // => true
