@@ -1,6 +1,6 @@
 {
   "name": "@forgehe/lotide",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "practice library for lighthouse labs, implementing our own version of lodash",
   "main": "assertArraysEqual.js",
   "directories": {
