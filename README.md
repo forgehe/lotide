@@ -33,12 +33,12 @@ The following functions are currently implemented:
 * `eqArrays(...)`: given two arrays, return a boolean if they are equal
 * `eqObjects(...)`: given two objects, return a boolean if they are equal
 * `findKey(...)`: given a object and a callback, returns the first key that returns truthy in the callback
-* `findKeyByValue(...)`:
-* `flatten(...)`:
-* `head(...)`:
-* `letterPositions(...)`:
-* `map(...)`:
-* `middle(...)`:
-* `takeUntil(...)`:
-* `tail(...)`:
-* `without(...)`:
+* `findKeyByValue(...)`: given an object and a string, return the first key where the value is stored
+* `flatten(...)`: given an array with nested arrays, return an array with the first layer of nest arrays moved to the main array
+* `head(...)`: given an array, return the first element of the array
+* `letterPositions(...)`: given a string, return an object listing each letter as a key with the value as the index where each letter is found. Does not work well with strings with multiples of the same letter
+* `map(...)`: given an array and a callback, return a new array with the elements transformed by the callback function
+* `middle(...)`: given an array, returns an array of the middle element of the array. If it is an array of even length, returns an array with the two middle elements of the array.
+* `takeUntil(...)`: given an array and a string, return a new array with the elements of the array before the given string
+* `tail(...)`: given an array, returns a new array without the first element of the given array 
+* `without(...)`: given two arrays, returns a new array with the elements of the first array that don't match with any element from the second array
