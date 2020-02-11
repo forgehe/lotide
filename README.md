@@ -25,19 +25,14 @@ This project was created and published by me as part of my learnings at Lighthou
 ## Documentation
 
 The following functions are currently implemented:
-
-* `function1(...)`: description
-* `function2(...)`: description
-* `function3(...)`: description
-
-* `assertArraysEqual(...)`:prints in console.log 
-* `assertEqual(...)`:
-* `assertObjectsEqual(...)`:
-* `countLetters(...)`:
-* `countOnly(...)`:
-* `eqArrays(...)`:
-* `eqObjects(...)`:
-* `findKey(...)`:
+* `assertArraysEqual(...)`: given two arrays, prints in console.log if the two arrays are equal
+* `assertEqual(...)`: given two primitive data types, prints in console.log if two primitive data types are equal
+* `assertObjectsEqual(...)`: given two objects prints in console.log if two objects are equal
+* `countLetters(...)`: returns an object with key of each letter that appears in a string, with a value of how many times that letter appeared in the string
+* `countOnly(...)`: given an array of strings and an object of keys to check, returns an object with values of how many times the keys appears in the array
+* `eqArrays(...)`: given two arrays, return a boolean if they are equal
+* `eqObjects(...)`: given two objects, return a boolean if they are equal
+* `findKey(...)`: given a object and a callback, returns the first key that returns truthy in the callback
 * `findKeyByValue(...)`:
 * `flatten(...)`:
 * `head(...)`:
